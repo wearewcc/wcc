@@ -1,6 +1,3 @@
 Example 1
 
-jfaks
-asjdfkajsk
-asjfkasj
-ajskdfjskafdjka
+This is the solution!
