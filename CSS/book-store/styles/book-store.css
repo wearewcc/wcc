@@ -1,0 +1,19 @@
+section{
+    border:2px solid maroon;
+    padding:5px;
+    margin-bottom:5px;
+    color:maroon;
+}
+
+h1 {
+    font-family:Georgia;
+    margin:0;
+}
+
+h2 {
+    margin:0;
+}
+
+p {
+    font-family:Helvetica;
+}
