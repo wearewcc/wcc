@@ -16,5 +16,5 @@
 
 check = raw_input('How much was your meal?')
 tip_amount = float(check) * 0.2
-print('You should tip $' + str(tip_amount) + '.')
-print('Your total cost would be $' + str(float(check) + tip_amount) + '.')
+print('You should tip $' + str(tip_amount))
+print('Your total cost would be $' + str(float(check) + tip_amount))
