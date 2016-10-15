@@ -57,6 +57,8 @@ print('\nGame over...')
 
 if player_total > 21 and computer_total > 21:
     print('Tie! (Both Player and Computer busted.)')
+elif player_total == computer_total:
+    print('Tie!')
 elif computer_total > 21:
     print('You win! (Computer busted.)')
 elif player_total > 21:
