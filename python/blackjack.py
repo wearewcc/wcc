@@ -39,15 +39,14 @@ else:
     player_card3 = 0
 
 computer_total = computer_card1 + computer_card2
+print('computer_total round 3:' + str(computer_total))
 if computer_total < 15:
     computer_card3 = cards.pop()
 else:
     computer_card3 = 0
 
 print('Your cards: ' + str(player_card1) + ", " + str(player_card2) + ", " + str(player_card3))
-print('Computer cards: ' + str(computer_card1) +  ", " + str(computer_card2) + ", " + str(player_card3))
-
-
+print('Computer cards: ' + str(computer_card1) +  ", " + str(computer_card2) + ", " + str(computer_card3))
 
 # Results
 player_total = player_card1 + player_card2 + player_card3
