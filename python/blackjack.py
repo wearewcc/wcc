@@ -39,7 +39,6 @@ else:
     player_card3 = 0
 
 computer_total = computer_card1 + computer_card2
-print('computer_total round 3:' + str(computer_total))
 if computer_total < 15:
     computer_card3 = cards.pop()
 else:
