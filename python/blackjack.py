@@ -39,7 +39,7 @@ else:
     player_card3 = 0
 
 computer_total = computer_card1 + computer_card2
-if computer_total < 15:
+if computer_total < 16:
     computer_card3 = cards.pop()
 else:
     computer_card3 = 0
