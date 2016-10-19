@@ -57,7 +57,7 @@ print('\nGame Over'+ '\nPlayer Total: ' + str(player_final) + '\nComputer total:
 
 if player_final > 21 and computer_final > 21:
     print('Tie! You both busted!')
-elif player_final == computer_final and player_final <21 and computer_final <21:
+elif player_final == computer_final and player_final <=21 and computer_final <=21:
     print ('Tie!!')
 elif player_final <=21 and computer_final >21:
     print ('You Won!')
