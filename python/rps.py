@@ -9,6 +9,11 @@ def check_move(move):
     else:
         return False
 
+
+# Alternative version for check_move; just FYI:
+def check_move2(move):
+    return move == 'rock' or move == 'paper' or move == 'scissors':
+
 # print check_move('rock') # Expect: True
 # print check_move('paper') # Expect: True
 # print check_move('scissors') # Expect: True
