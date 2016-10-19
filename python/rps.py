@@ -24,12 +24,17 @@ def check_move2(move):
 
 def get_player_move():
 
+    # Prompt the user to enter their move
     move = raw_input('Pick your move: rock, paper, or scissors? ')
 
+    # This will happen on a loop until the user enters a valid move
     while check_move(move) == False:
         print('Invalid move; pick again.')
-        get_player_move()
+        # Run this function again, so they're asked to enter a new move
+        move = get_player_move()
 
+    # If they get out of the while loop, it means they
+    # entered a valid move, so return it
     return move
 
 # print get_player_move()
