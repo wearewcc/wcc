@@ -60,10 +60,10 @@ def judge(moveA, moveB):
 
     # moveA is scissors
     if moveA == 'scissors' and moveB == 'rock':
-        return True
+        return False
 
     if moveA == 'scissors' and moveB == 'paper':
-        return False
+        return True
 
 
 # print judge('rock','paper') # Expected: False
