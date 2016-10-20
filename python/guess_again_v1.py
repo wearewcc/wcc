@@ -69,7 +69,8 @@ def play():
 
     # Keep prompting until they get it
     while guess != secret_number:
-        print('Too ' + compare(guess, secret_number) + '. Guess again.\n')
+        results = compare(guess, secret_number);
+        print('Too ' + results + '. Guess again.\n')
         guess = get_guess()
 
     # Conclusion

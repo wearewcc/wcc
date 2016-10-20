@@ -29,7 +29,7 @@ if 1:
         counter = counter + 1
 
 
-if 1:
+if 0:
     numbers = range(0,10) # Produces a list like [0,1,2,3,4,5,6,7,9]
     for counter in numbers:
         print counter * '#'
@@ -41,7 +41,7 @@ if 1:
         print letter
 
 
-if 1:
+if 0:
     continents = ['Africa', 'Antarctica', 'Asia', 'Europe', 'North America', 'Australia', 'South America']
     for continent in continents:
         print continent + ' is a continent.'
