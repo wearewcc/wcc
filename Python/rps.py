@@ -70,8 +70,8 @@ def judge(moveA, moveB):
 #print judge('rock','scissors') # Expected: True
 #print judge('paper','rock') # Expected: True
 #print judge('paper','scissors') # Expected: False
-#print judge('scissors','rock') # Expected: True
-#print judge('scissors','paper') # Expected: False
+#print judge('scissors','rock') # Expected: False
+#print judge('scissors','paper') # Expected: True
 
 def play():
 
@@ -80,24 +80,30 @@ def play():
     player = get_player_move()
     check_move(get_player_move)
 
-
     computer = get_computer_move()
 
-    # ???
     print('The computer picked: ' + computer)
 
-# THIS IS AS FAR AS I COULD GET WHEN I HAD TO GO TO SLEEP FOR WORK TOMORROW. WILL FINISH THURSDAY NIGHT.
-#something is wrong with my judge function and i can't figure it out.
-    judge ('player', 'computer')
-    if False:
-        print('The computer won.')
-    elif True:
-        print ('You Won!')
-    elif player == computer:
-        print('Tie')
-    # Figure out who won
-    # Print results; either: `Tie`, `You Won!`, or `The computer won.`
-    # ???
+
+#This was my sorry attempt at this portion of the game!
+# Finally had to give up and steal the solution for the part below. I was, as usual, overthinking
+# saved my try to remind me that judge is the function; the whole point is to use it as a tool, not have to re-instate it.
+#    judge (player, computer)
+#        if return == False:
+#            print('The computer won! ')
+#        elif return == True:
+#            print('You won!')
+#        elif player == computer:
+#            print('Tie! ')
+
+# Stolen from WCC
+    if player == computer:
+        print('Tie!')
+    elif(judge(player, computer) == True):
+        print('You won!')
+    else:
+        print('The computer won!')
+
 
     # Prompt to play again
     play_again = raw_input('Play again? Type `y` or `n`: ')
