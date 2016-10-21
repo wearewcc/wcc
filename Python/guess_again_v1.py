@@ -34,3 +34,7 @@ def get_guess():
 
     # Test get_guess
 print get_guess() # Expected: Keeps prompting until user enters a valid number
+
+# this is the error it keeps giving me.
+  File "guess_again_v1.py", line 4
+SyntaxError: Non-ASCII character '\xe2' in file guess_again_v1.py on line 4, but no encoding declared; see http://python.org/dev/peps/pep-0263/ for details
