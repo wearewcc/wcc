@@ -1,7 +1,6 @@
 import random
 
-
-
+# Get the user's guess
 # Params: None
 # Returns: Integer
 #
@@ -10,7 +9,7 @@ def get_guess():
     # Get initial guess
     guess = raw_input('Enter your guess: ')
 
-    # Assume its not valid, until its proven otherwise
+    # Assume it's not valid, until it's proven otherwise
     valid = False
 
     while valid != True:
@@ -32,5 +31,49 @@ def get_guess():
 
     return guess
 
+
+def compare(numA, numB):
+    if numA > numB:
+        return 'high'
+    else:
+        return 'low'
+
+def play():
+
+    # Pick a secret number
+    secret_number = random.randint(1, 100)
+
+    # When building your program, the following line will tell you what
+    # the secret_number is x, this will make it easier to test the game.
+    # When done, remove or comment-out this line.
+    print('TEMPORARY DEBUGGING HELPER -> The secret number is: ' + str(secret_number))
+
+    # Print message at the start the game
+    print("\nI'm thinking of a number between 1 and 100; what do you think it is?")
+
+    # Get the player_s initial guess
+    guess = get_guess()
+
+
+    # Keep prompting until they get it correct
+    # For every failed attempt, print 'Too x. Guess again.' where x is either 'high' or 'low'
+    while guess != secret_number:
+        results = compare(guess, secret_number);
+        print('Too ' + results + 'Guess again.\n')
+        guess = get_guess()
+
+
+    # Print conclusion
+    print('You got it! The number was ' + str(secret_number))
+
+# Run the game
+play()
+
+
     # Test get_guess
-print get_guess() # Expected: Keeps prompting until user enters a valid number
+#print get_guess() # Expected: Keeps prompting until user enters a valid number
+
+# Test compare
+#print compare(100,1)  # Expected: 'high'
+#print compare(1,100)  # Expected: 'high'
+#print compare(99,100) # Expected: 'low'
