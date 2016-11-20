@@ -1,0 +1,37 @@
+body{
+    background-image: url(https://practice-pixels.s3.amazonaws.com/texture-paper.jpg);
+
+}
+
+#wrapper {
+    width:600px;
+    margin:auto; /* Centers the div on the page */
+    border:1px solid tan;
+    padding:25px;
+
+}
+h1{
+    font-family:Verdana;
+    color:#1540ca;
+    text-shadow: 4px 4px white;
+    }
+
+h2{
+    font-family:Verdana;
+    color:#4b6ece;
+    text-decoration: underline;
+    }
+
+p{
+    line-height: 1.5rem;
+    font-family:TimesNewRoman;
+}
+
+ul{
+    font-family:TimesNewRoman;
+
+}
+
+.primary {
+    font-weight:bold;
+}

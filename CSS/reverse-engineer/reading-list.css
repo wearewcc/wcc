@@ -1,0 +1,70 @@
+/*So, these are how they were when I finished the unguided version. It was getting late and I had to go out of town for a funeral the next day, so I then went through the guided version of the exercise. It was helpful to see where I could have done better*/
+
+body{
+    background-image: url('http://practice-pixels.s3.amazonaws.com/texture-blue.jpg');
+    font-size: 62.5%; /*I remembered this but put it in the wrong place*/
+}
+
+#wrapper {
+    width:820px;
+    margin:auto; /* Centers the div on the page */
+    border:1px solid white;
+    padding:25px;
+    background-color: white;
+}
+
+header{
+    text-align: center;
+}
+
+#book{
+    width:795px;
+    margin:auto;
+    border:10px solid white;
+    border-bottom: thick;
+    padding:10px;
+    background-color: #EEEEEE;
+    font-size:1rem;
+}
+
+h1 {
+    font-family:Helvetica;
+    font-size:2.5rem;
+    color:#D42A1D;
+    line-height: 1px;
+
+}
+
+h2 {
+    font-family:Helvetica;
+    font-size:1.5rem;
+}
+
+h3{
+    font-family: Helvetica;
+    line-height: 0.005em;
+
+}
+
+h4 {
+    font-style: italic;
+    font-family:Helvetica;
+    line-height: 0.005em;
+}
+
+p{
+    font-family:Georgia;
+}
+
+/*I couldn't figure out what the other two colors were for, so these were added too*/
+a:link {
+    color:#D42A1D;
+    }
+a:hover{
+    color:#185A96;
+}
+}
+
+footer{
+    text-align:center;
+}

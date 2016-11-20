@@ -77,7 +77,7 @@ def play():
 
         guesses_left = 4 - guess_count;
 
-        print('Too ' + results + '; you have ' + str(guesses_left) +' guesses left.\n')
+        print('Too ' + results + '; you have ' + str(guesses_left) +' guess(es) left.\n')
         guess = get_guess()
 
     # Conclusion
